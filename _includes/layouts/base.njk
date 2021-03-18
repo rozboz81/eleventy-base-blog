@@ -11,7 +11,7 @@
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   </head>
     <header>
-      <a href="{{ '/' | url }}"><img src="/img/pexels-oziel-gÃ³mez-1578445.jpg" /></a>
+      <a href="{{ '/' | url }}"><img src="/img/logo.jpg" /></a>
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
@@ -20,28 +20,40 @@
       {%- endfor %}
       </ul>
     </header>
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/pexels-oziel-gÃ³mez-1578445.jpg" class="d-block w-100" alt="...">
+      <img src="/img/contrast.jpg" class="d-block w-100" alt="Otiks' last release - EP with four tracks">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Contrast EP</h5>
+        <p>Otiks' last release - EP with four tracks</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="/img/pexels-oziel-gÃ³mez-1578445.jpg" class="d-block w-100" alt="...">
+      <img src="/img/artworks-000077866260-8mj6t6-t500x500.jpg" class="d-block w-100" alt="Otiks' first release">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Deadlights</h5>
+        <p>Otiks' first release</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="/img/pexels-oziel-gÃ³mez-1578445.jpg" class="d-block w-100" alt="...">
+      <img src="/img/bbb6820087004d3cbe405e2e842af767.jpeg" class="d-block w-100" alt="Otiks' second single">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Low Profile</h5>
+        <p>Otiks' second single</p>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -52,8 +64,11 @@
 
       {{ content | safe }}
     </main>
-
-    <footer></footer>
+  <aside>
+  <iframe src="https://open.spotify.com/embed/album/1eZPGbvHVpt2qR3qfTOcvO" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet fermentum elit. Pellentesque finibus accumsan suscipit. Mauris accumsan sit amet quam fermentum malesuada. Mauris bibendum laoreet urna, quis maximus nunc rhoncus vel. In in volutpat purus, vitae pretium ante. Curabitur vel magna accumsan, interdum metus sit amet, consequat metus. Curabitur sem elit, malesuada volutpat magna vitae, laoreet mattis elit.</p>
+  </aside>
+  <footer></footer>
 
     <!-- Current page: {{ page.url | url }} -->
     <script src="{{ '/js/bootstrap.min.js' | url }}"></script>
